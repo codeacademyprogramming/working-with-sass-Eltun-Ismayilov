@@ -40,6 +40,13 @@
   margin: 0; }
 
 .navbar {
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0;
+  box-shadow: 10px 4px 5px grey; }
+
+.navbar {
   width: 100%;
   height: 70px;
   background-color: white; }
@@ -56,6 +63,9 @@
       letter-spacing: 4px; }
       .navbar_ul_li:hover {
         background-color: #ccc; }
+      .navbar_ul_li a {
+        text-decoration: none;
+        color: black; }
     .navbar_ul-li {
       margin-left: 760px;
       padding: 15px 15px;
@@ -64,6 +74,9 @@
       letter-spacing: 4px; }
       .navbar_ul-li:hover {
         background-color: #ccc; }
+      .navbar_ul-li a {
+        text-decoration: none;
+        color: black; }
   @media screen and (max-width: 700px) {
     .navbar .colum {
       display: none; } }
