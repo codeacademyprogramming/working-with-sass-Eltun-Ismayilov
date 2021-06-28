@@ -1,0 +1,66 @@
+.container{
+    width: 78%;
+    height: 600px;
+    background-color:$background-white;
+    margin-left: 135px;
+    margin-top: 100px;
+
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+}
+.col-3{
+    width: 48%;
+    height: 600px;
+    &-h1{
+        font-size: $font-size-30;
+        font-weight: 500;
+        text-align: center;
+        padding-top: 30px;
+        letter-spacing: 3px;
+        @include responsive (phone){
+            margin-left: -100px;
+        }
+    
+        
+    }
+    &-h2{
+        font-size: 24px;
+        font-weight: 500;
+        padding-top: 30px;
+        letter-spacing: 4px;
+        @include responsive (phone){
+            margin-left: -100px;
+        }
+    }
+    &-p{
+        padding-top: 15px;
+        color:$background-silver;
+        @include responsive (phone){
+            margin-left: -100px;
+        }
+    }
+    @include responsive (phone){
+        width: 100%;
+    }
+}
+.col-4{
+    width: 48%;
+    height: 600px;
+    background-image: url(https://www.w3schools.com/w3images/tablesetting.jpg);
+    opacity: 0.7;
+    @include responsive (phone){
+        width: 118%;
+        margin-left: -100px;
+        background-size: cover;
+    }
+}
+.hr{
+    @include responsive (phone){
+       width: 200%;
+    }
+}
